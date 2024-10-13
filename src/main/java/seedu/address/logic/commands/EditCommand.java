@@ -182,14 +182,6 @@ public class EditCommand extends Command {
             return Optional.ofNullable(nric);
         }
 
-        public void setNric(Nric nric) {
-            this.nric = nric;
-        }
-
-        public Optional<Nric> getNric() {
-            return Optional.ofNullable(nric);
-        }
-
         public void setPhone(Phone phone) {
             this.phone = phone;
         }
