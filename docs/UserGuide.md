@@ -4,7 +4,7 @@ title: CareLink User Guide
 ---
 
 - Table of Contents
-{:toc}
+  {:toc}
 
 ## Introduction
 
@@ -679,7 +679,11 @@ AMake sure each NRIC adheres to the following format and constraints:
 
 8. **Model Not Updated After `find` or `findapp` Commands**: When executing certain commands immediately following `find` or `findapp` commands, the UI would continue to display the result from `find` or `findapp`commands.
 
-  - **Workaround**: Use the `list` command immediately after `find` or `findapp` commands to refresh and update the model.
+- **Workaround**: Use the `list` command immediately after `find` or `findapp` commands to refresh and update the model.
+
+9. **After editing a person, the existing links are lost**: When a person is edited, the existing links no longer remain.
+
+   - **Workaround**: While we actively fix this, you can relink your patients and caregivers using the `link` command just as easily. We would recommend to add a note to the person when you first link the person to keep a record, as well as easily relink if required.
 
 ---
 
