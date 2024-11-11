@@ -109,8 +109,8 @@ public class EditCommand extends Command {
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
         Set<Role> updatedRoles = editPersonDescriptor.getRoles().orElse(personToEdit.getRoles());
-        Set<Nric> updatedCaregivers = editPersonDescriptor.getCaregivers().orElse(personToEdit.getCaregivers());
-        Set<Nric> updatedPatients = editPersonDescriptor.getPatients().orElse(personToEdit.getPatients());
+        Set<Nric> updatedCaregivers = personToEdit.getCaregivers();
+        Set<Nric> updatedPatients = personToEdit.getPatients();
 
         return new Person(updatedName, updatedNric, updatedPhone, updatedEmail, updatedAddress, updatedTags,
                 updatedRoles, updatedCaregivers, updatedPatients);
